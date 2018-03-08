@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="utf-8"/>
+	<title>运行指标</title>
+	<script src="..\libs/angular/angular/angular.js"></script>
+	<script src="..\libs/echart/echarts.min.js"></script>
+	<script src="..\js/app.js"></script>
+	<script src="..\js/service/operationIndexService.js"></script>
+	<script src="..\js/controller/operationIndexController.js"></script>
+	<link rel="stylesheet" type="text/css" href="..\libs/bootstrap/css/bootstrap.min.css" />
+</head>
+<body>
+
+<div ng-app="myApp" ng-controller="operationIndexController">
+
+	<div class="m-b-md clear-float">
+        <button class="btn btn-success" style="float: none !important;margin: 0 15px;" ng-click="showData()" >开始检索</button>
+     </div>
+
+	<div id="echarts-demo" class="table-scrollable" style="width: 600px;height:400px;">    
+    </div>
+
+	<div class="table-scrollable" style="overflow-x:auto;margin-bottom:50px" ng-init="">
+		<table class="table table-bordered table-striped" >
+		<thead><tr><th ng-repeat="name in allFarmCols">
+		<span>{{name}}</span></th></tr></thead>
+		<tbody>
+			 <tr ng-repeat="row in allFarmContent track by $index">
+			      <td ng-repeat="value in row track by $index" >{{value}}</td>
+			 </tr>
+		</tbody>
+		</table>
+	</div>
+					
+</div>
+
+</body>
+</html>

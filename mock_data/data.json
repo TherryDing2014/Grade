@@ -1,0 +1,33 @@
+{
+  "resourcesTree": {
+    "status": "OK",
+    "body": [
+      {
+        "id": "59409746c9e77c0001efb6d5",
+        "lastModify": "1499755782572",
+        "version": "31",
+        "createDate": "1497405254002",
+        "name": "Ê×Ò³",
+        "isParent": true,
+        "menuName": "aside.nav.DASHBOARD",
+        "uri": "app.dashboard-v1",
+        "roleCodes": [
+          "ADMIN",
+          "Maintain",
+          "maintaining"
+        ],
+        "menuId": "dashboard",
+        "type": "0",
+        "childMenus": [],
+        "iconImg": "glyphicon-home-sany",
+        "order": "1",
+        "checked": false,
+        "open": false,
+        "title": "²Ëµ¥ - Ê×Ò³",
+        "pid": "",
+        "permitAll": false,
+        "self": "public class com.sany.windfarm.form.system.ResourceForm"
+      }
+  ]
+}
+}
